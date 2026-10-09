@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "tf2build";
+    src: url("fonts/TF2Build.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "tf2second";
+    src: url("fonts/TF2secondary.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("./images/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden; /* Prevents scrollbars during tilt motion */
+}
+
+/* Ensure the scene container takes up full area for mouse tracking */
+#scene {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glassmorphism card container */
+.container {
+    display: flex !important; /* Overrides parallax absolute positioning overrides if needed */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.steam {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: "tf2build", Arial, sans-serif;
+    text-align: center;
+    margin-top: 0;
+}
+
+p {
+    font-family: "tf2second", Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+}
